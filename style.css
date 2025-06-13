@@ -1,0 +1,47 @@
+/*variables*/
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #333;
+  --background-color: #f4f4f4;
+  --font-family: "Arial", sans-serif;
+}
+
+/*fonts*/
+
+/*reset*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*base styles*/
+body {
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*mobile styles*/
+
+/*small tablet styles*/
+
+@media screen and (min-width: 375px) {
+}
+
+/*larger tablet styles*/
+@media screen and (min-width: 620px) {
+}
+
+/*desktop styles*/
+@media screen and (min-width: 960px) {
+}
+
+/*large desktop styles*/
+@media screen and (min-width: 1200px) {
+}
