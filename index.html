@@ -12,21 +12,67 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./style.css" class="" />
 
     <title>Product Preview Card Component</title>
   </head>
   <body>
-    Perfume Gabrielle Essence Eau De Parfum A floral, solar and voluptuous
-    interpretation composed by Olivier Polge, Perfumer-Creator for the House of
-    CHANEL. $149.99 $169.99 Add to Cart
+    <main>
+      <section class="product-card">
+        <div class="product-preview">
+          <picture>
+            <source class="desktop-img" media="(min-width: 480px)" srcset="images/image-product-desktop.jpg" />
+            <img class="product-img" src="./images/image-product-mobile.jpg" alt="Product" />
+          </picture>
+        </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Professor_Pantss</a> |
-      <a href="#">Kabelo Maponya</a>
-    </div>
+        <div class="product-description">
+          <h1>PERFUME</h1>
+          <h2>Gabrielle Essence Eau De Parfum</h2>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+  
+          <div class="price-description">
+            <span id="discount-price">$149.99</span>
+            <span id="original-price">$169.99</span>
+          </div>
+          
+
+          <div class="button">
+            <button>
+              <img id="cart-icon" src="./images/icon-cart.svg" alt="icon" />
+              <span id="add-to-cart">Add to Cart</span>
+            </button>
+          </div>
+          <div class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+              >Frontend Mentor</a
+            >. <br />Coded by<a href="#">Professor_Pantss</a> |
+            <a href="#">Kabelo Maponya</a>
+          </div>
+        </div>
+      </section>
+
+      
+
+        
+      </div>
+    </main>
   </body>
 </html>

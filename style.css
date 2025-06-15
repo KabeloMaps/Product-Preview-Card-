@@ -1,47 +1,214 @@
 /*variables*/
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
+  --primary-color: hsl(158, 36%, 37%);
+  --secondary-color: hsl(158, 42%, 18%);
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
   --text-color: #333;
   --background-color: #f4f4f4;
-  --font-family: "Arial", sans-serif;
+  --font-family: "Montserrat", sans-serif;
+  --font-family-secondary: "Fraunces";
 }
 
-/*fonts*/
-
+@font-face {
+  font-family: "Fraunces";
+  src: url(./Font/Fraunces/Fraunces-VariableFont_SOFTWONKopszwght.ttf)
+    format("truetype");
+  font-weight: 700;
+}
 /*reset*/
-body {
+body,
+main,
+.product-card,
+h1,
+h2,
+p {
   margin: 0;
   padding: 0;
 }
 
 /*base styles*/
 body {
+  font-size: 14px;
+  background-color: var(--Cream);
+}
+
+main {
+  margin: 1.2em;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.product-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+
+  width: 100%;
+  align-items: center;
+}
+.product-preview > img {
+  width: 100%;
+  display: block;
+  border-radius: 0;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+}
+.product-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background-color: var(--White);
+
+  padding: 1rem;
+}
+
+.price-description {
+  font-family: var(--font-family-secondary);
+  display: flex;
+  flex-direction: row;
+  display: inline-block;
+  font-size: 2.5rem;
+  margin: 0.5rem;
+  width: 100%;
+}
+
+#discount-price {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+#original-price {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 9px;
+  padding-right: 1.3rem;
+  text-decoration: line-through;
+  color: var(--Grey);
+  vertical-align: middle;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--White);
+  width: 100%;
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 15px;
+}
+
+#add-to-cart {
+  padding: 0 12px 0 12px;
+}
+
+h1 {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--Grey);
+  letter-spacing: 0.5em;
+}
+
+h2 {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-family: var(--font-family);
+  color: var(--Grey);
+  font-size: 0.985rem;
+  margin-bottom: 1.5rem;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 1rem;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--primary-color);
 }
 
 /*mobile styles*/
 
 /*small tablet styles*/
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 480px) {
+  body {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .product-preview {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+  }
+  /* .product-img {
+    width: 100%;
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .desktop-img {
+    width: 50%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+    height: fit-content;
+    border-radius: 0; */
+  }
 }
 
 /*larger tablet styles*/
-@media screen and (min-width: 620px) {
+@media screen and (max-width: 768px) {
 }
 
 /*desktop styles*/
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 769px) {
 }
 
 /*large desktop styles*/
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1280px) {
 }
