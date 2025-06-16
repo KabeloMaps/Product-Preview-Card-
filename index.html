@@ -18,8 +18,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -32,12 +30,10 @@
   <body>
     <main>
       <section class="product-card">
-        <div class="product-preview">
           <picture class="product-preview">
             <source media="(min-width: 600px)" srcset="images/image-product-desktop.jpg" />
             <img class="product-img" src="./images/image-product-mobile.jpg" alt="Product" />
           </picture>
-        </div>
 
         <div class="product-description">
           <h1>PERFUME</h1>
@@ -54,7 +50,7 @@
           
 
           <div class="button">
-            <button>
+            <button type="button" alt="add-to-cart-btn">
               <img id="cart-icon" src="./images/icon-cart.svg" alt="icon" />
               <span id="add-to-cart">Add to Cart</span>
             </button>
