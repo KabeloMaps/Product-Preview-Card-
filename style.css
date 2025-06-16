@@ -91,7 +91,6 @@ main {
   display: inline-block;
   margin-top: 0.875rem;
   font-size: 1.2rem;
-  margin-bottom: 2.5rem;
   padding-left: 1.85rem;
   text-decoration: line-through;
   color: var(--Grey);
@@ -115,6 +114,7 @@ button {
 
 button:hover {
   background-color: var(--secondary-color);
+  cursor: pointer;
 }
 
 #add-to-cart {
