@@ -89,9 +89,10 @@ main {
 
 #original-price {
   display: inline-block;
+  margin-top: 0.875rem;
   font-size: 1.2rem;
-  margin-bottom: 9px;
-  padding-right: 1.3rem;
+  margin-bottom: 2.5rem;
+  padding-left: 1.85rem;
   text-decoration: line-through;
   color: var(--Grey);
   vertical-align: middle;

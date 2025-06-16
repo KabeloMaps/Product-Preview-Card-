@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
+- Solution URL: https://github.com/KabeloMaps/Product-Preview-Card-.git
 - Live Site URL:
 
 ## My process
