@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/KabeloMaps/Product-Preview-Card-.git
-- Live Site URL:
+- Live Site URL: https://product-preview-card-2025.netlify.app
 
 ## My process
 
