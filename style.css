@@ -207,6 +207,7 @@ p {
     align-items: center;
     width: 100%;
     max-width: 768px;
+    padding: 1rem;
   }
 
   .product-card {
