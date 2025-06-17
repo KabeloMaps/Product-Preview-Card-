@@ -9,7 +9,7 @@
   --text-color: #333;
   --background-color: #f4f4f4;
   --font-family: "Montserrat", sans-serif;
-  --font-family-secondary: "Fraunces";
+  --font-family-secondary: "Fraunces", sans-serif;
 }
 
 /*reset*/
@@ -25,7 +25,7 @@ p {
 
 /*base styles*/
 body {
-  font-size: 14px;
+  font-size: 0.875rem;
   background-color: var(--Cream);
 }
 
@@ -82,7 +82,7 @@ main {
   width: 100%;
 }
 
-#discount-price {
+.discount-price {
   color: var(--primary-color);
   font-weight: 900;
 }
@@ -109,9 +109,14 @@ button {
   padding: 1.25rem;
   border: none;
   border-radius: 10px;
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  button {
+    transition: none;
+  }
+}
 button:hover {
   background-color: var(--secondary-color);
   cursor: pointer;
@@ -130,7 +135,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Fraunces";
+  font-family: "Fraunces", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   margin-top: 0.5rem;
@@ -153,47 +158,9 @@ p {
   color: var(--primary-color);
 }
 
-/*mobile styles*/
-
-/*small tablet styles*/
-/* @media screen and (min-width: 480px) {
-  body {
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .product-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .product-preview {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-  }
-
-  .product-img {
-    display: block;
-    width: 100%;
-    overflow: hidden;
-
-    border-radius: 0;
-  }
-} */
-
 @media screen and (min-width: 600px) {
   body {
-    font-size: 16px;
+    font-size: 0.875rem;
     display: flex;
     height: 100vh;
     justify-content: center;
